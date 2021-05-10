@@ -1,0 +1,12 @@
+name: Action Workflow
+on: 
+  push:
+  branches:
+    - master
+    - 'feature/*'
+    - 'feature/**'
+    - '!features/featC'
+  tags:
+    - v1.*
+  paths:
+    - '**.js'
